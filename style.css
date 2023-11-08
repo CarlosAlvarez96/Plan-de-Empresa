@@ -16,10 +16,17 @@ body {
     /* 10px 20px */
 }
 
-header img {
+.logo-container {
     max-width: 9.375em;
-    /* 150px */
+    /* Ancho máximo para el logo */
 }
+
+header img {
+    max-width: 100%;
+    /* Asegura que la imagen del logo se ajuste al contenedor */
+}
+
+/* Resto de tus estilos */
 
 header h1 {
     margin: 0;
