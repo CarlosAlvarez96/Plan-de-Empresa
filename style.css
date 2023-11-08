@@ -25,7 +25,6 @@ header img {
     max-width: 100%;
     /* Asegura que la imagen del logo se ajuste al contenedor */
 }
-
 /* Resto de tus estilos */
 
 header h1 {
@@ -111,26 +110,8 @@ main {
     font-size: 6.125em;
     margin: 0;
     padding: 0;
+    display: inline;
     /* 50px */
-}
-.titulo-subtitulo {
-    float: left;
-    position: absolute;
-    text-align: right;
-    /* Centra el contenido horizontalmente */
-    color: #fff;
-    font-family: 'Alex Brush', cursive;
-    font-size: 0.9em;
-    margin-left: 1.2em;
-    padding-left: 19em;
-}
-
-.subtitulo {
-    font-family: 'Julius Sans One', sans-serif;
-    color: #fff;
-    font-size: 1.125em;
-    margin: 0;
-    padding: 0;
 }
 /* Estilos de currículum vitae */
 .cv {
