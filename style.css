@@ -49,6 +49,15 @@ nav a {
     color: #fff;
     text-decoration: none;
 }
+.img-container{
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background-color: #fff;
+}
+.organigrama {
+    width: 100%;
+}
 
 /* Estilos de la barra de navegación en pantallas más pequeñas */
 @media (max-width: 768px) {
