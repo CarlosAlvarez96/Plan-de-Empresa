@@ -12,19 +12,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.625em 1.25em;
-    /* 10px 20px */
+    padding: 1em 1.25em; /* Modificado */
 }
 
 .logo-container {
-    max-width: 9.375em;
-    /* Ancho máximo para el logo */
+    max-width: 9.375em; /* Ancho máximo para el logo */
 }
 
 header img {
-    max-width: 100%;
-    /* Asegura que la imagen del logo se ajuste al contenedor */
+    max-width: 100%; /* Asegura que la imagen del logo se ajuste al contenedor */
 }
+
 /* Resto de tus estilos */
 
 header h1 {
@@ -42,19 +40,20 @@ nav ul {
 nav li {
     display: inline;
     margin-right: 1.25em;
-    /* 20px */
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
 }
-.img-container{
+
+.img-container {
     width: 80%;
     margin: auto;
-    padding: 30px;
+    padding: 1.25em; /* Modificado */
     background-color: #fff;
 }
+
 .organigrama {
     width: 100%;
 }
@@ -65,7 +64,6 @@ nav a {
         flex-direction: column;
         align-items: flex-start;
         padding: 1.25em;
-        /* 20px */
     }
 
     nav ul {
@@ -79,16 +77,13 @@ nav a {
         display: block;
         margin: 0;
         margin-bottom: 0.625em;
-        /* 10px */
     }
 }
+
 main {
     max-width: 50em;
-    /* 800px */
     margin: 1.25em auto;
-    /* 20px */
     padding: 1.25em;
-    /* 20px */
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -96,21 +91,17 @@ main {
 
 .imgMiembro {
     max-width: 18.75em;
-    /* 300px */
     float: left;
     margin-right: 1.25em;
-    /* 20px */
 }
 
 /* Estilos de socios */
 .socio {
     margin: 1.25em 0;
-    /* 20px */
 }
 
 .socio img {
     max-width: 18.75em;
-    /* 300px */
 }
 
 .titulo {
@@ -119,19 +110,17 @@ main {
     font-size: 6.125em;
     margin: 0;
     padding: 0;
-    /* 50px */
 }
+
 /* Estilos de currículum vitae */
 .cv {
     margin: 1.25em 0;
-    /* 20px */
 }
 
 /* Estilos de pie de página */
 footer {
     text-align: center;
     padding: 0.625em;
-    /* 10px */
     background-color: #000;
     color: #fff;
 }
@@ -139,10 +128,9 @@ footer {
 .separator {
     border: none;
     border-top: 2px solid #333;
-    /* Cambia el color y el grosor según tus preferencias */
     margin: 20px 0;
-    /* Espaciado superior e inferior */
 }
+
 /* Estilos de enlaces */
 a {
     color: #333;
@@ -151,7 +139,6 @@ a {
 /* Paleta de colores inspirada en alimentos */
 
 /* Tipografía */
-
 h1,
 h2,
 strong,
@@ -172,3 +159,4 @@ ul li {
 .slide img {
     width: 100%;
 }
+

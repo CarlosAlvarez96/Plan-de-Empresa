@@ -1,352 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Organigrama</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    />
     <style>
-        body {
-            background-color: #f8f9fa;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h2 {
-        color: #333;
-        }
-        p {
-        margin-bottom: 15px;
-        }
+      body {
+        background-color: #f8f9fa;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+      }
 
-        .custom-container {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding: 30px;
-            margin-top: 50px;
-            max-width: 70%;
-            margin: 30px auto 30px auto;
-            padding: 50px;
-        }
-        img{
-            max-width: 100%;
-        }
+      article {
+        max-width: 60%;
+        margin: 50px auto; /* Centro el artículo en la página */
+      }
+
+      .custom-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-justify {
+        text-align: justify;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto 15px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+      }
     </style>
     <script src="./script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="top-nav">
-        <div class="logo-container">
-            <header>
-                <a href="./index.html">
-                    <img src="./img/Logo.png" alt="Logo de la empresa">
-                </a>
-            </header>
-        </div>
-        <div class="title">
-            <h1 class="titulo">Delicio</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./encuentranos.html"><strong>Encuéntranos</strong></a></li>
-                <li><a href="./politica.html"><strong>Política</strong></a></li>
-                <li><a href="./organigrama.html"><strong>Organigrama</strong></a></li>
-                <li><a href="./aboutUs.html"><strong>Sobre nosotros</strong></a></li>
-                <li><a href="./planEmpresa.html"><strong>Plan de empresa</strong></a></li>
-            </ul>
-        </nav>
+      <div class="logo-container">
+        <header>
+          <a href="./index.html">
+            <img src="./img/Logo.png" alt="Logo de la empresa" />
+          </a>
+        </header>
+      </div>
+      <div class="title">
+        <h1 class="titulo">Delicio</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./encuentranos.html"><strong>Encuéntranos</strong></a>
+          </li>
+          <li>
+            <a href="./politica.html"><strong>Política</strong></a>
+          </li>
+          <li>
+            <a href="./organigrama.html"><strong>Organigrama</strong></a>
+          </li>
+          <li>
+            <a href="./aboutUs.html"><strong>Sobre nosotros</strong></a>
+          </li>
+          <li>
+            <a href="./planEmpresa.html"><strong>Plan de empresa</strong></a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <article>
-            <div class="container custom-container">
-              <h1 class="text-center">ESTATUTOS SOCIALES DE DELICIO S.L.</h1>
-              <div class="text-justify">
-                <p><strong>CAPÍTULO I: DENOMINACIÓN, OBJETO SOCIAL Y DOMICILIO</strong></p>
-          
-                <p><strong>Artículo 1:</strong> La sociedad se denominará "DELICIO S.L." y se regirá por estos estatutos y las leyes aplicables.</p>
-          
-                <p><strong>Artículo 2:</strong> Objeto Social
-                  La sociedad tiene como objeto social: Servicio de comida a domicilio.
-                </p>
-          
-                <p><strong>Artículo 3:</strong> Domicilio Social
-                  El domicilio social de la sociedad se establece en C/Camino de ronda esquina Fígares en Granada.
-                </p>
-          
-                <p><strong>CAPÍTULO II: CAPITAL SOCIAL Y ACCIONES</strong></p>
-          
-                <p><strong>Artículo 4:</strong> Capital Social
-                  El capital social de la sociedad es de 40000€, dividido en 10 participaciones de 4000€ cada una.
-                </p>
-          
-                <p><strong>Artículo 5:</strong> Aportaciones y Clases de Acciones
-                  Las aportaciones de los socios se realizarán en euros. Se podrán emitir distintas clases de acciones con derechos y restricciones específicas, según se establezca en acuerdos de la Junta General.
-                </p>
-          
-                <p><strong>CAPÍTULO III: ÓRGANOS DE ADMINISTRACIÓN Y REPRESENTACIÓN</strong></p>
-          
-                <p><strong>Artículo 6:</strong> Órganos de Administración
-                  La sociedad será administrada por los socios mancomunados. Los cuales desempeñarán sus funciones de acuerdo con las leyes aplicables y estos estatutos.
-                </p>
-          
-                <p><strong>Artículo 7:</strong> Representación
-                  La representación de la sociedad recae en los representantes legales de los socios, que podrán actuar individual o conjuntamente según lo establecido por la Junta General.
-                </p>
-          
-                <p><strong>CAPÍTULO IV: JUNTA GENERAL DE SOCIOS</strong></p>
-          
-                <p><strong>Artículo 8:</strong> Convocatoria y Quórum
-                  La Junta General se convocará de acuerdo con lo establecido por la ley y estos estatutos. El quórum para la celebración de la Junta General y la adopción de acuerdos será el establecido por la ley.
-                </p>
-          
-                <p><strong>Artículo 9:</strong> Facultades de la Junta General
-                  La Junta General tendrá las facultades que le atribuye la ley y estos estatutos, incluyendo la modificación de los estatutos, la distribución de beneficios, la aprobación de cuentas anuales, entre otras.
-                </p>
-          
-                <p><strong>CAPÍTULO V: DISOLUCIÓN Y LIQUIDACIÓN</strong></p>
-          
-                <p><strong>Artículo 10:</strong> Causas de Disolución
-                  La sociedad se disolverá en los casos y de acuerdo con los procedimientos establecidos por la ley.
-                </p>
-          
-                <p><strong>Artículo 11:</strong> Liquidación
-                  En caso de disolución, se procederá a la liquidación de la sociedad de acuerdo con las disposiciones legales aplicables.
-                </p>
-          
-                <p><strong>CAPÍTULO VI: EJERCICIO SOCIAL Y CUENTAS ANUALES</strong></p>
-          
-                <p><strong>Artículo 12:</strong> Ejercicio social
-                  Los ejercicios sociales comienzan el 1 de enero y finalizan el 31 de diciembre de cada año natural.
-          
-                  Por excepción, el primer ejercicio social comprende desde el principio de las operaciones de la Sociedad hasta el 31 de diciembre de ese mismo año.
-                </p>
-          
-                <p><strong>Artículo 13:</strong> Cuentas Anuales
-                  Las cuentas y el informe de gestión, así como, en su caso, su revisión por auditores de cuentas, deberán ajustarse a las normas legales y reglamentarias vigentes en cada momento.
-          
-                  La distribución de dividendos a los socios se realizará en proporción a su participación en el capital.
-          
-                  Los socios tienen derecho a examinar la contabilidad en los términos previstos en la Ley.
-                </p>
-          
-                <p><strong>DISPOSICIONES FINALES</strong></p>
-          
-                <p><strong>Artículo 14:</strong> Modificación de Estatutos
-                  Estos estatutos podrán ser modificados por acuerdo de la Junta General de Socios, de conformidad con la ley.
-                </p>
-          
-                <p><strong>Artículo 15:</strong> Ley Aplicable y Jurisdicción
-                  Estos estatutos se regirán e interpretarán de acuerdo con las leyes del registro mercantil y de sociedades y cualquier controversia derivada de ellos será sometida a los tribunales de dicha jurisdicción.
-                </p>
-              </div>
-            </div>
-            <div class="container custom-container">
-                <h1 class="text-center">CARACTERÍSTICAS DE UNA SOCIEDAD LIMITADA</h1>
-                <div class="text-justify">
-                    <h2>1. Socios</h2>
-                    <p>
-                    Para <strong>crear una sociedad limitada</strong> no existe mínimo o máximo de socios. Pudiendo ser constituida por una única persona (física o jurídica), creando una sociedad limitada unipersonal, o por varias sin límite máximo.
-                    </p>
-                    <p>
-                    En cuanto a la responsabilidad que asumen cada uno de ellos, esta se ve limitada al capital aportado. De este modo, no responden con su patrimonio personal de las posibles deudas de la sociedad. Los socios de una sociedad limitada pueden ser de dos clases: socios trabajadores y/o socios capitalistas. En otras palabras, un socio trabajador aporta su trabajo y habilidades a la empresa, mientras que un socio capitalista aporta capital financiero.
-                    </p>
-                
-                    <h2>2. Denominación social</h2>
-                    <p>
-                    La denominación social de la empresa deberá ser un nombre único que no pertenezca a ninguna otra empresa. Para comprobar si está libre el nombre seleccionado se puede acceder a la web del <a href="https://paeelectronico.es/es-es/Servicios/Paginas/Creacion-y-cese-de-empresas.aspx">Centro de Información y Red de Creación de Empresas (CIRCE)</a>. El nombre elegido deberá ir seguido de su forma societaria: Sociedad de Responsabilidad Limitada o sus siglas S.R.L. Sociedad Limitada o sus siglas S.L.
-                    </p>
-                
-                    <h2>3. Capital social</h2>
-                    <p>
-                    El capital social mínimo exigido para constituir la sociedad es de 1€, desembolsado íntegramente. Así reza en el <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-15818">capítulo II de la Ley 18/2022, de 28 de septiembre, de creación y crecimiento de empresas</a>: “La eliminación de la exigencia de 3.000 euros de capital social mínimo vigente hasta la fecha tiene por objeto promover la creación de empresas mediante el abaratamiento de sus costes de constitución y pretende, asimismo, ampliar las opciones de los socios fundadores respecto al capital social que desean suscribir en función de sus necesidades y preferencias.”
-                    </p>
-                    <p>
-                    Esta aportación puede ser en forma monetaria o en especie, aportando bienes materiales como elementos de inmovilizado (vehículos, equipos informáticos, etc.). Eso sí, estos bienes deberán haber sido valorados con la aprobación de los socios. En cuanto a la división del capital, este se realizará mediante participaciones sociales. Su transmisión tiene limitaciones legales con el objetivo de proteger al resto de socios, contando con derecho preferente frente a terceros.
-                    </p>
-                
-                    <h2>4. Domicilio Social</h2>
-                    <p>
-                    El domicilio de una sociedad limitada debe estar en España. Siendo lo habitual que se ubique en la misma dirección donde se establezca físicamente la sede de la empresa. En caso de querer realizar un cambio de domicilio social podrá ser aprobado por el administrador si se realiza en el mismo domicilio. Si este no fuera el caso y se quisiera cambiar de localidad, se deberá llevar a la junta de socios para su aprobación.
-                    </p>
-                
-                    <h2>5. Objeto social</h2>
-                    <p>
-                    El objeto social es el conjunto de actividades a las que se va a dedicar la empresa. Para evitar gastos administrativos en caso de diversificar las actividades que desempeña la sociedad, es recomendable abarcar un rango amplio de actividades dentro del sector.
-                    </p>
-                
-                    <h2>6. Constitución</h2>
-                    <p>
-                    Para la constitución de una sociedad limitada se deberán establecer unos estatutos, acudir al notario para redactar una escritura pública y acudir al registro mercantil. En los estatutos de la sociedad, regulados por la orden <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2010-19099">JUS 3185/2010 de los Estatutos tipo de la Sociedad de responsabilidad limitada</a>, se detallarán las aportaciones de los socios, el porcentaje que representa y diversos aspectos sobre la gestión de la sociedad.
-                    </p>
-                    <p>
-                    Además, en los casos que la sociedad esté compuesta por muchos socios será recomendable realizar un pacto de socios.
-                    </p>
-                
-                    <h2>7. Administración y gestión</h2>
-                    <p>
-                    En cuanto a la administración y gestión de la sociedad, se deberá establecer en los estatutos alguna de las siguientes opciones:
-                    </p>
-                    <ul>
-                    <li>Administrador único: una sola persona será la encargada de administrar la sociedad.</li>
-                    <li>Administradores solidarios: cada uno de los socios puede tomar decisiones que afecten a la sociedad por su cuenta comprometiendo al resto.</li>
-                    <li>Administradores mancomunados: las decisiones las deben tomar previo acuerdo firmado por todos los socios.</li>
-                    <li>Consejo de administración: se designará a tres o más administradores que tomarán las decisiones que afecten a la sociedad.</li>
-                    </ul>
-                    <p>
-                    En el mismo documento se deberá fijar la duración del puesto de administración, pudiendo ser indefinido. Estableciendo, en el caso que corresponda, la retribución de los mismos. Hay que tener en cuenta que las responsabilidades derivadas de la gestión de la sociedad recaerán sobre los administradores, no sobre los socios.
-                    </p>
-                    <p>
-                    El máximo órgano para la toma de decisiones de la sociedad es la junta general de socios. Esta junta se convoca por los administradores todos los años (en los primeros 6 meses del año) para presentar la gestión realizada, aprobar las cuentas anuales y establecer el reparto del resultado de ejercicio.
-                    </p>
-                
-                    <h2>8. Régimen Seguridad Social</h2>
-                    <p>
-                    Tanto los administradores como los socios que ostenten control sobre la sociedad tendrán que estar establecidos como trabajadores autónomos. Sin embargo, una de las ventajas que ofrecen las sociedades limitadas es que los socios se podrán adjudicar un sueldo o facturarle a la sociedad.
-                    </p>
-                
-                    <h2>9. Legislación</h2>
-                    <p>
-                    Las sociedades limitadas se rigen por el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544">Real Decreto Legislativo 1/2010</a>, de 2 de julio, por el que se aprueba el texto refundido de la Ley de Sociedades de Capital.
-                    </p>
-                
-                    <h2>10. Obligaciones fiscales</h2>
-                    <p>
-                    Están obligadas a tributar por los mismos impuestos que el resto de sociedades: el impuesto de sociedades (IS) y el Impuesto sobre el Valor Añadido (IVA). Una sociedad limitada presenta ventajas con respecto a los autónomos gracias a un tipo de gravamen más bajo y mayor posibilidad de aplicar gastos deducibles en el impuesto de sociedades.
-                    </p>
-                </div>
-            </div>
-            <div class="container custom-container">
-                <h1 class="text-center">TRÁMITES A SEGUIR</h1>
-                <div class="text-justify">
-                    <h2>1. Registra el nombre de la SL</h2>
-                    <p>
-                      Organismo: Registro mercantil
-                      Este trámite consiste en registrar un nombre único que no coincida con otra sociedad ya establecida.
-                      <br>
-                      Para ello, debes hacer una solicitud de certificado a través de la web del Registro Mercantil. En este documento deberás incluir cinco posibles nombres para la nueva SL. Mientras realizas la solicitud te informarán si alguno de esos cinco nombres no estuviera disponible. Cuando te hayan concedido el certificado, tendrás el nombre reservado 6 meses. Aun así, debes saber que el certificado únicamente tiene una validez de tres meses para el registro ante notario. Si excedes el plazo, tendrás que volver a solicitarlo.
-                    </p>
-                    <p>
-                      Debes acceder como usuario (abonado o no) para la solicitud del certificado.
-                      <a href="https://sede.registradores.org/site/acceso">https://sede.registradores.org/site/acceso</a>
-                    </p>
-                    <img src="./img/registro.png" alt="captura del registro mercantil" />
-                  
-                    <h2>2. Abrir una cuenta bancaria a nombre de la sociedad</h2>
-                    <p>
-                      Una vez que hayas conseguido el certificado de registro, el siguiente paso será abrir una cuenta bancaria a nombre de la nueva Sociedad Limitada. Es un paso imprescindible, ya que en esa cuenta deberás ingresar el Capital Mínimo Inicial, que en la actualidad es de solo un euro (hasta hace poco era de 3.000,06 euros).
-                    </p>
-                    <p>
-                      Al ingresar el capital, el banco te entregará un certificado del ingreso, que deberás presentar en notaría para poder crear la Sociedad Limitada. Eso sí, debes tener en cuenta que deberás reservar un 20% de los beneficios de la sociedad hasta alcanzar los 3.000,06 euros de capital mínimo vigentes hasta ahora.
-                    </p>
-                  
-                    <h2>3. Redacta los estatutos</h2>
-                    <p>
-                      Este paso consiste en redactar los Estatutos Sociales de la SL, el conjunto de normas por las que se regirá la empresa. Este documento se añadirá posteriormente a la Escritura Pública de Constitución.
-                    </p>
-                    <p>
-                      Los Estatutos Sociales de una Sociedad Limitada deben tener un mínimo de información, entre la que se encuentran:
-                    </p>
-                    <ul>
-                      <li>Modalidad de Sociedad de Responsabilidad Limitada.</li>
-                      <li>Objeto social o actividad que realizará la sociedad.</li>
-                      <li>Denominación y domicilio social de la Sociedad.</li>
-                      <li>Fecha de cierre de cada ejercicio.</li>
-                      <li>Participaciones en que se divide; valor nominal de cada participación y numeración de las mismas.</li>
-                      <li>Sistema de administración de la sociedad.</li>
-                    </ul>
-                  
-                    <h2>4. Escritura de Constitución de la nueva Sociedad Limitada</h2>
-                    <p>
-                      En cuanto a la Escritura de Constitución de la Sociedad Limitada, se debe formalizar por todos los socios ante notario. Para ello, los socios deben presentar en la notaría con la siguiente documentación:
-                    </p>
-                    <ul>
-                      <li>Certificación del Registro Mercantil Central.</li>
-                      <li>Estatutos Sociales.</li>
-                      <li>DNI original de cada socio fundador de la SL.</li>
-                      <li>En caso de ser extranjero deberá aportar la declaración de inversiones exteriores.</li>
-                      <li>Certificado de la Entidad Bancaria.</li>
-                    </ul>
-                  
-                    <h2>5. Obtención del NIF (Número de Identificación Fiscal)</h2>
-                    <p>
-                      Organismo: Hacienda
-                      Una vez que hayas realizado la firma de la escritura deberás conseguir el NIF en Hacienda. Te facilitarán un Número de Identificación Fiscal provisional. Además te otorgarán las etiquetas y tarjetas de identificación de la SL.
-                    </p>
-                    <p>
-                      Para ello necesitarás la siguiente documentación:
-                    </p>
-                    <ul>
-                      <li>Fotocopia de la escritura de constitución de la sociedad.</li>
-                      <li>Fotocopia del DNI del firmante.</li>
-                      <li>Modelo 036 cumplimentado.</li>
-                    </ul>
-                    <p>
-                      Llegados a este punto, cabe destacar que este NIF únicamente tiene una validez de seis meses y que, superado ese plazo, deberás cambiarlo por uno definitivo.
-                    </p>
-                  
-                    <h2>6. Alta en Impuesto de Actividades Económicas</h2>
-                    <p>
-                      El trámite de alta en el IAE, por sus siglas Impuesto de Actividades Económicas, se realiza presentando el modelo 840 junto con el NIF en la Administración Tributaria correspondiente al lugar donde se ejerce la actividad económica.
-                    </p>
-                    <p>
-                      En el caso de aquellos supuestos exentos del IAE, es decir para quienes tengan una cifra de negocio inferior a 1.000.000 euros al año, sólo es necesario aportar el modelo 036 de la Declaración Censal indicando los epígrafes IAE a los que se acoge.
-                    </p>
-                  
-                    <h2>7. Declaración del IVA</h2>
-                    <p>
-                      Organismo: Hacienda
-                      La declaración de IVA se realiza en Hacienda para determinar el comienzo de la actividad económica. Para este trámite es necesario presentar el Modelo 036, el NIF provisional y el documento del IAE, sólo en caso de ser necesario.
-                    </p>
-                    <p>
-                      En el caso de que surjan modificaciones o cese la actividad de la sociedad, también será necesario hacer esta presentación.
-                    </p>
-                  
-                    <h2>8. Inscripción en el Registro Mercantil</h2>
-                    <p>
-                      Organismo: Registro mercantil
-                      La inscripción en el Registro Mercantil debe realizarse por parte de todos los integrantes de la SL en el Registro Mercantil de la provincia donde está fijado el domicilio social.
-                    </p>
-                    <p>
-                      Para hacer la inscripción en el Registro Mercantil de la SL se debe presentar:
-                    </p>
-                    <ul>
-                      <li>Copia del NIF provisional.</li>
-                      <li>Copia autorizada de la Escritura de Constitución de la Sociedad Limitada.</li>
-                    </ul>
-                  
-                    <h2>9. Obtención del NIF definitivo</h2>
-                    <p>
-                      Organismo: Hacienda
-                      Cuando se realicen los pasos anteriores deberás obtener el NIF definitivo en Hacienda. Con todos los trámites terminados se constituirá la nueva sociedad limitada.
-                    </p>
-                    <p>
-                      Para comenzar a ejercer tu actividad económica ya solo queda que cumplas con las obligaciones de la SL con la Seguridad Social y el Ayuntamiento del lugar en el que esté fijada la dirección social de tu empresa; como por ejemplo darse de alta en el Régimen Especial de Trabajadores Autónomos.
-                    </p>
-                  
-                    
-                    <img src="./img/036.png" alt="modelo 036">
-                    <img src="./img/840.png" alt="modelo 840">
+      <div class="container custom-container">
+        <h1 class="text-center">ESTATUTOS SOCIALES DE DELICIO S.L.</h1>
+        <div class="text-justify">
+          <p>
+            <strong>CAPÍTULO I: DENOMINACIÓN, OBJETO SOCIAL Y DOMICILIO</strong>
+          </p>
 
-                    <h2>Bibliografía:</h2>
-                    <p>
-                      Pasos para crear una SL:
-                      <a href="https://www.autonomosyemprendedor.es/articulo/guias-de-emprendimiento/como-crear-sociedad-limitada-guia-paso-paso/20230609135724030875.html">https://www.autonomosyemprendedor.es/articulo/guias-de-emprendimiento/como-crear-sociedad-limitada-guia-paso-paso/20230609135724030875.html</a>
-                    </p>
-                </div>
-            </div>
+          <p>
+            <strong>Artículo 1:</strong> La sociedad se denominará "DELICIO
+            S.L." y se regirá por estos estatutos y las leyes aplicables.
+          </p>
 
-            <!-- jQuery, Popper.js, Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <p>
+            <strong>Artículo 2:</strong> Objeto Social La sociedad tiene como
+            objeto social: Servicio de comida a domicilio.
+          </p>
+
+          <p>
+            <strong>Artículo 3:</strong> Domicilio Social El domicilio social de
+            la sociedad se establece en C/Camino de ronda esquina Fígares en
+            Granada.
+          </p>
+
+          <p><strong>CAPÍTULO II: CAPITAL SOCIAL Y ACCIONES</strong></p>
+
+          <p>
+            <strong>Artículo 4:</strong> Capital Social El capital social de la
+            sociedad es de 40000€, dividido en 10 participaciones de 4000€ cada
+            una.
+          </p>
+
+          <p>
+            <strong>Artículo 5:</strong> Aportaciones y Clases de Acciones Las
+            aportaciones de los socios se realizarán en euros. Se podrán emitir
+            distintas clases de acciones con derechos y restricciones
+            específicas, según se establezca en acuerdos de la Junta General.
+          </p>
+
+          <p>
+            <strong
+              >CAPÍTULO III: ÓRGANOS DE ADMINISTRACIÓN Y REPRESENTACIÓN</strong
+            >
+          </p>
+
+          <p>
+            <strong>Artículo 6:</strong> Órganos de Administración La sociedad
+            será administrada por los socios mancomunados. Los cuales
+            desempeñarán sus funciones de acuerdo con las leyes aplicables y
+            estos estatutos.
+          </p>
+
+          <p>
+            <strong>Artículo 7:</strong> Representación La representación de la
+            sociedad recae en los representantes legales de los socios, que
+            podrán actuar individual o conjuntamente según lo establecido por la
+            Junta General.
+          </p>
+
+          <p><strong>CAPÍTULO IV: JUNTA GENERAL DE SOCIOS</strong></p>
+
+          <p>
+            <strong>Artículo 8:</strong> Convocatoria y Quórum La Junta General
+            se convocará de acuerdo con lo establecido por la ley y estos
+            estatutos. El quórum para la celebración de la Junta General y la
+            adopción de acuerdos será el establecido por la ley.
+          </p>
+
+          <p>
+            <strong>Artículo 9:</strong> Facultades de la Junta General La Junta
+            General tendrá las facultades que le atribuye la ley y estos
+            estatutos, incluyendo la modificación de los estatutos, la
+            distribución de beneficios, la aprobación de cuentas anuales, entre
+            otras.
+          </p>
+
+          <p><strong>CAPÍTULO V: DISOLUCIÓN Y LIQUIDACIÓN</strong></p>
+
+          <p>
+            <strong>Artículo 10:</strong> Causas de Disolución La sociedad se
+            disolverá en los casos y de acuerdo con los procedimientos
+            establecidos por la ley.
+          </p>
+
+          <p>
+            <strong>Artículo 11:</strong> Liquidación En caso de disolución, se
+            procederá a la liquidación de la sociedad de acuerdo con las
+            disposiciones legales aplicables.
+          </p>
+
+          <p>
+            <strong>CAPÍTULO VI: EJERCICIO SOCIAL Y CUENTAS ANUALES</strong>
+          </p>
+
+          <p>
+            <strong>Artículo 12:</strong> Ejercicio social Los ejercicios
+            sociales comienzan el 1 de enero y finalizan el 31 de diciembre de
+            cada año natural. Por excepción, el primer ejercicio social
+            comprende desde el principio de las operaciones de la Sociedad hasta
+            el 31 de diciembre de ese mismo año.
+          </p>
+
+          <p>
+            <strong>Artículo 13:</strong> Cuentas Anuales Las cuentas y el
+            informe de gestión, así como, en su caso, su revisión por auditores
+            de cuentas, deberán ajustarse a las normas legales y reglamentarias
+            vigentes en cada momento. La distribución de dividendos a los socios
+            se realizará en proporción a su participación en el capital. Los
+            socios tienen derecho a examinar la contabilidad en los términos
+            previstos en la Ley.
+          </p>
+
+          <p><strong>DISPOSICIONES FINALES</strong></p>
+
+          <p>
+            <strong>Artículo 14:</strong> Modificación de Estatutos Estos
+            estatutos podrán ser modificados por acuerdo de la Junta General de
+            Socios, de conformidad con la ley.
+          </p>
+
+          <p>
+            <strong>Artículo 15:</strong> Ley Aplicable y Jurisdicción Estos
+            estatutos se regirán e interpretarán de acuerdo con las leyes del
+            registro mercantil y de sociedades y cualquier controversia derivada
+            de ellos será sometida a los tribunales de dicha jurisdicción.
+          </p>
+        </div>
+      </div>
+      <div class="container custom-container">
+        <h1 class="text-center">CARACTERÍSTICAS DE UNA SOCIEDAD LIMITADA</h1>
+        <div class="text-justify">
+          <h2>1. Socios</h2>
+          <p>
+            Para <strong>crear una sociedad limitada</strong> no existe mínimo o
+            máximo de socios. Pudiendo ser constituida por una única persona
+            (física o jurídica), creando una sociedad limitada unipersonal, o
+            por varias sin límite máximo.
+          </p>
+          <p>
+            En cuanto a la responsabilidad que asumen cada uno de ellos, esta se
+            ve limitada al capital aportado. De este modo, no responden con su
+            patrimonio personal de las posibles deudas de la sociedad. Los
+            socios de una sociedad limitada pueden ser de dos clases: socios
+            trabajadores y/o socios capitalistas. En otras palabras, un socio
+            trabajador aporta su trabajo y habilidades a la empresa, mientras
+            que un socio capitalista aporta capital financiero.
+          </p>
+
+          <h2>2. Denominación social</h2>
+          <p>
+            La denominación social de la empresa deberá ser un nombre único que
+            no pertenezca a ninguna otra empresa. Para comprobar si está libre
+            el nombre seleccionado se puede acceder a la web del
+            <a
+              href="https://paeelectronico.es/es-es/Servicios/Paginas/Creacion-y-cese-de-empresas.aspx"
+              >Centro de Información y Red de Creación de Empresas (CIRCE)</a
+            >. El nombre elegido deberá ir seguido de su forma societaria:
+            Sociedad de Responsabilidad Limitada o sus siglas S.R.L. Sociedad
+            Limitada o sus siglas S.L.
+          </p>
+
+          <h2>3. Capital social</h2>
+          <p>
+            El capital social mínimo exigido para constituir la sociedad es de
+            1€, desembolsado íntegramente. Así reza en el
+            <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-15818"
+              >capítulo II de la Ley 18/2022, de 28 de septiembre, de creación y
+              crecimiento de empresas</a
+            >: “La eliminación de la exigencia de 3.000 euros de capital social
+            mínimo vigente hasta la fecha tiene por objeto promover la creación
+            de empresas mediante el abaratamiento de sus costes de constitución
+            y pretende, asimismo, ampliar las opciones de los socios fundadores
+            respecto al capital social que desean suscribir en función de sus
+            necesidades y preferencias.”
+          </p>
+          <p>
+            Esta aportación puede ser en forma monetaria o en especie, aportando
+            bienes materiales como elementos de inmovilizado (vehículos, equipos
+            informáticos, etc.). Eso sí, estos bienes deberán haber sido
+            valorados con la aprobación de los socios. En cuanto a la división
+            del capital, este se realizará mediante participaciones sociales. Su
+            transmisión tiene limitaciones legales con el objetivo de proteger
+            al resto de socios, contando con derecho preferente frente a
+            terceros.
+          </p>
+
+          <h2>4. Domicilio Social</h2>
+          <p>
+            El domicilio de una sociedad limitada debe estar en España. Siendo
+            lo habitual que se ubique en la misma dirección donde se establezca
+            físicamente la sede de la empresa. En caso de querer realizar un
+            cambio de domicilio social podrá ser aprobado por el administrador
+            si se realiza en el mismo domicilio. Si este no fuera el caso y se
+            quisiera cambiar de localidad, se deberá llevar a la junta de socios
+            para su aprobación.
+          </p>
+
+          <h2>5. Objeto social</h2>
+          <p>
+            El objeto social es el conjunto de actividades a las que se va a
+            dedicar la empresa. Para evitar gastos administrativos en caso de
+            diversificar las actividades que desempeña la sociedad, es
+            recomendable abarcar un rango amplio de actividades dentro del
+            sector.
+          </p>
+
+          <h2>6. Constitución</h2>
+          <p>
+            Para la constitución de una sociedad limitada se deberán establecer
+            unos estatutos, acudir al notario para redactar una escritura
+            pública y acudir al registro mercantil. En los estatutos de la
+            sociedad, regulados por la orden
+            <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2010-19099"
+              >JUS 3185/2010 de los Estatutos tipo de la Sociedad de
+              responsabilidad limitada</a
+            >, se detallarán las aportaciones de los socios, el porcentaje que
+            representa y diversos aspectos sobre la gestión de la sociedad.
+          </p>
+          <p>
+            Además, en los casos que la sociedad esté compuesta por muchos
+            socios será recomendable realizar un pacto de socios.
+          </p>
+
+          <h2>7. Administración y gestión</h2>
+          <p>
+            En cuanto a la administración y gestión de la sociedad, se deberá
+            establecer en los estatutos alguna de las siguientes opciones:
+          </p>
+          <ul>
+            <li>
+              Administrador único: una sola persona será la encargada de
+              administrar la sociedad.
+            </li>
+            <li>
+              Administradores solidarios: cada uno de los socios puede tomar
+              decisiones que afecten a la sociedad por su cuenta comprometiendo
+              al resto.
+            </li>
+            <li>
+              Administradores mancomunados: las decisiones las deben tomar
+              previo acuerdo firmado por todos los socios.
+            </li>
+            <li>
+              Consejo de administración: se designará a tres o más
+              administradores que tomarán las decisiones que afecten a la
+              sociedad.
+            </li>
+          </ul>
+          <p>
+            En el mismo documento se deberá fijar la duración del puesto de
+            administración, pudiendo ser indefinido. Estableciendo, en el caso
+            que corresponda, la retribución de los mismos. Hay que tener en
+            cuenta que las responsabilidades derivadas de la gestión de la
+            sociedad recaerán sobre los administradores, no sobre los socios.
+          </p>
+          <p>
+            El máximo órgano para la toma de decisiones de la sociedad es la
+            junta general de socios. Esta junta se convoca por los
+            administradores todos los años (en los primeros 6 meses del año)
+            para presentar la gestión realizada, aprobar las cuentas anuales y
+            establecer el reparto del resultado de ejercicio.
+          </p>
+
+          <h2>8. Régimen Seguridad Social</h2>
+          <p>
+            Tanto los administradores como los socios que ostenten control sobre
+            la sociedad tendrán que estar establecidos como trabajadores
+            autónomos. Sin embargo, una de las ventajas que ofrecen las
+            sociedades limitadas es que los socios se podrán adjudicar un sueldo
+            o facturarle a la sociedad.
+          </p>
+
+          <h2>9. Legislación</h2>
+          <p>
+            Las sociedades limitadas se rigen por el
+            <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544"
+              >Real Decreto Legislativo 1/2010</a
+            >, de 2 de julio, por el que se aprueba el texto refundido de la Ley
+            de Sociedades de Capital.
+          </p>
+
+          <h2>10. Obligaciones fiscales</h2>
+          <p>
+            Están obligadas a tributar por los mismos impuestos que el resto de
+            sociedades: el impuesto de sociedades (IS) y el Impuesto sobre el
+            Valor Añadido (IVA). Una sociedad limitada presenta ventajas con
+            respecto a los autónomos gracias a un tipo de gravamen más bajo y
+            mayor posibilidad de aplicar gastos deducibles en el impuesto de
+            sociedades.
+          </p>
+        </div>
+      </div>
+      <div class="container custom-container">
+        <h1 class="text-center">TRÁMITES A SEGUIR</h1>
+        <div class="text-justify">
+          <h2>1. Registra el nombre de la SL</h2>
+          <p>
+            Organismo: Registro mercantil Este trámite consiste en registrar un
+            nombre único que no coincida con otra sociedad ya establecida.
+            <br />
+            Para ello, debes hacer una solicitud de certificado a través de la
+            web del Registro Mercantil. En este documento deberás incluir cinco
+            posibles nombres para la nueva SL. Mientras realizas la solicitud te
+            informarán si alguno de esos cinco nombres no estuviera disponible.
+            Cuando te hayan concedido el certificado, tendrás el nombre
+            reservado 6 meses. Aun así, debes saber que el certificado
+            únicamente tiene una validez de tres meses para el registro ante
+            notario. Si excedes el plazo, tendrás que volver a solicitarlo.
+          </p>
+          <p>
+            Debes acceder como usuario (abonado o no) para la solicitud del
+            certificado.
+            <a href="https://sede.registradores.org/site/acceso"
+              >https://sede.registradores.org/site/acceso</a
+            >
+          </p>
+          <img src="./img/registro.png" alt="captura del registro mercantil" />
+
+          <h2>2. Abrir una cuenta bancaria a nombre de la sociedad</h2>
+          <p>
+            Una vez que hayas conseguido el certificado de registro, el
+            siguiente paso será abrir una cuenta bancaria a nombre de la nueva
+            Sociedad Limitada. Es un paso imprescindible, ya que en esa cuenta
+            deberás ingresar el Capital Mínimo Inicial, que en la actualidad es
+            de solo un euro (hasta hace poco era de 3.000,06 euros).
+          </p>
+          <p>
+            Al ingresar el capital, el banco te entregará un certificado del
+            ingreso, que deberás presentar en notaría para poder crear la
+            Sociedad Limitada. Eso sí, debes tener en cuenta que deberás
+            reservar un 20% de los beneficios de la sociedad hasta alcanzar los
+            3.000,06 euros de capital mínimo vigentes hasta ahora.
+          </p>
+
+          <h2>3. Redacta los estatutos</h2>
+          <p>
+            Este paso consiste en redactar los Estatutos Sociales de la SL, el
+            conjunto de normas por las que se regirá la empresa. Este documento
+            se añadirá posteriormente a la Escritura Pública de Constitución.
+          </p>
+          <p>
+            Los Estatutos Sociales de una Sociedad Limitada deben tener un
+            mínimo de información, entre la que se encuentran:
+          </p>
+          <ul>
+            <li>Modalidad de Sociedad de Responsabilidad Limitada.</li>
+            <li>Objeto social o actividad que realizará la sociedad.</li>
+            <li>Denominación y domicilio social de la Sociedad.</li>
+            <li>Fecha de cierre de cada ejercicio.</li>
+            <li>
+              Participaciones en que se divide; valor nominal de cada
+              participación y numeración de las mismas.
+            </li>
+            <li>Sistema de administración de la sociedad.</li>
+          </ul>
+
+          <h2>4. Escritura de Constitución de la nueva Sociedad Limitada</h2>
+          <p>
+            En cuanto a la Escritura de Constitución de la Sociedad Limitada, se
+            debe formalizar por todos los socios ante notario. Para ello, los
+            socios deben presentar en la notaría con la siguiente documentación:
+          </p>
+          <ul>
+            <li>Certificación del Registro Mercantil Central.</li>
+            <li>Estatutos Sociales.</li>
+            <li>DNI original de cada socio fundador de la SL.</li>
+            <li>
+              En caso de ser extranjero deberá aportar la declaración de
+              inversiones exteriores.
+            </li>
+            <li>Certificado de la Entidad Bancaria.</li>
+          </ul>
+
+          <h2>5. Obtención del NIF (Número de Identificación Fiscal)</h2>
+          <p>
+            Organismo: Hacienda Una vez que hayas realizado la firma de la
+            escritura deberás conseguir el NIF en Hacienda. Te facilitarán un
+            Número de Identificación Fiscal provisional. Además te otorgarán las
+            etiquetas y tarjetas de identificación de la SL.
+          </p>
+          <p>Para ello necesitarás la siguiente documentación:</p>
+          <ul>
+            <li>Fotocopia de la escritura de constitución de la sociedad.</li>
+            <li>Fotocopia del DNI del firmante.</li>
+            <li>Modelo 036 cumplimentado.</li>
+          </ul>
+          <p>
+            Llegados a este punto, cabe destacar que este NIF únicamente tiene
+            una validez de seis meses y que, superado ese plazo, deberás
+            cambiarlo por uno definitivo.
+          </p>
+
+          <h2>6. Alta en Impuesto de Actividades Económicas</h2>
+          <p>
+            El trámite de alta en el IAE, por sus siglas Impuesto de Actividades
+            Económicas, se realiza presentando el modelo 840 junto con el NIF en
+            la Administración Tributaria correspondiente al lugar donde se
+            ejerce la actividad económica.
+          </p>
+          <p>
+            En el caso de aquellos supuestos exentos del IAE, es decir para
+            quienes tengan una cifra de negocio inferior a 1.000.000 euros al
+            año, sólo es necesario aportar el modelo 036 de la Declaración
+            Censal indicando los epígrafes IAE a los que se acoge.
+          </p>
+
+          <h2>7. Declaración del IVA</h2>
+          <p>
+            Organismo: Hacienda La declaración de IVA se realiza en Hacienda
+            para determinar el comienzo de la actividad económica. Para este
+            trámite es necesario presentar el Modelo 036, el NIF provisional y
+            el documento del IAE, sólo en caso de ser necesario.
+          </p>
+          <p>
+            En el caso de que surjan modificaciones o cese la actividad de la
+            sociedad, también será necesario hacer esta presentación.
+          </p>
+
+          <h2>8. Inscripción en el Registro Mercantil</h2>
+          <p>
+            Organismo: Registro mercantil La inscripción en el Registro
+            Mercantil debe realizarse por parte de todos los integrantes de la
+            SL en el Registro Mercantil de la provincia donde está fijado el
+            domicilio social.
+          </p>
+          <p>
+            Para hacer la inscripción en el Registro Mercantil de la SL se debe
+            presentar:
+          </p>
+          <ul>
+            <li>Copia del NIF provisional.</li>
+            <li>
+              Copia autorizada de la Escritura de Constitución de la Sociedad
+              Limitada.
+            </li>
+          </ul>
+
+          <h2>9. Obtención del NIF definitivo</h2>
+          <p>
+            Organismo: Hacienda Cuando se realicen los pasos anteriores deberás
+            obtener el NIF definitivo en Hacienda. Con todos los trámites
+            terminados se constituirá la nueva sociedad limitada.
+          </p>
+          <p>
+            Para comenzar a ejercer tu actividad económica ya solo queda que
+            cumplas con las obligaciones de la SL con la Seguridad Social y el
+            Ayuntamiento del lugar en el que esté fijada la dirección social de
+            tu empresa; como por ejemplo darse de alta en el Régimen Especial de
+            Trabajadores Autónomos.
+          </p>
+
+          <img src="./img/036.png" alt="modelo 036" />
+          <img src="./img/840.png" alt="modelo 840" />
+
+          <h2>Bibliografía:</h2>
+          <p>
+            Pasos para crear una SL:
+            <a
+              href="https://www.autonomosyemprendedor.es/articulo/guias-de-emprendimiento/como-crear-sociedad-limitada-guia-paso-paso/20230609135724030875.html"
+              >https://www.autonomosyemprendedor.es/articulo/guias-de-emprendimiento/como-crear-sociedad-limitada-guia-paso-paso/20230609135724030875.html</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="container custom-container">
+        <h1 class="text-center">RETO RECURSOS HUMANOS</h1>
+        <div class="text-justify">
+          <h3>Contratos de personal</h3>
+          <div class="cv">
+            <iframe
+              src="./PDF/CINDEFINIDO_2309_CASTELLANO_C.pdf"
+              width="800"
+              height="600"
+            ></iframe>
+          </div>
+          <div class="cv">
+            <iframe
+              src="./PDF/CTEMPORAL_2309_CASTELLANO_C TEM.pdf"
+              width="800"
+              height="600"
+            ></iframe>
+          </div>
+          <div class="cv">
+            <iframe
+              src="./PDF/CTEMPORAL_2309_CASTELLANO_C.pdf"
+              width="800"
+              height="600"
+            ></iframe>
+          </div>
+          <h3>Contratos de staff</h3>
+          <div class="cv">
+            <iframe
+              src="./PDF/Contrato SEGUMÁS.pdf"
+              width="800"
+              height="600"
+            ></iframe>
+          </div>
+          <div class="cv">
+            <iframe
+              src="./PDF/Contrato Vulcano Gres.pdf"
+              width="800"
+              height="600"
+            ></iframe>
+          </div>
+          <div class="cv">
+            <iframe
+              src="./PDF/CONTRATO DE COLABORACIÓN EXTERNA copia (1).pdf"
+              width="800"
+              height="600"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- jQuery, Popper.js, Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </article>
 
-            
     <footer>
-        <p>&copy; 2023 Delicio - Sabor a domicilio</p>
+      <p>&copy; 2023 Delicio - Sabor a domicilio</p>
     </footer>
-</body>
+  </body>
 </html>
