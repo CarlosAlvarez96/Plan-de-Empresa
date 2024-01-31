@@ -36,6 +36,28 @@
         margin-bottom: 20px;
       }
 
+            /* Estilos para el índice */
+            .custom-container ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      .custom-container li {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+      }
+
+      .custom-container li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .custom-container li a:hover {
+        color: #007bff;
+      }
       .text-center {
         text-align: center;
       }
@@ -59,6 +81,89 @@
       footer {
         text-align: center;
         margin-top: 20px;
+      }
+      .legend {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 90%;
+        width: 100%;
+      }
+
+      .legend-item {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+      }
+      .calendar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .month {
+        margin: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .month-header {
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 8px;
+        font-weight: bold;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+      .important-dates {
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .tone1 {
+        background-color: #d9c865;
+      } /* Oro */
+      .tone2 {
+        background-color: #87ceeb;
+      } /* Azul claro */
+      .tone3 {
+        background-color: #98fb98;
+      } /* Verde claro */
+      .tone4 {
+        background-color: #da8b6c;
+      } /* Salmón claro */
+      .tone5 {
+        background-color: #dda0dd;
+      } /* Ciruela */
+      .tone6 {
+        background-color: #4682b4;
+      } /* Rojo tomate */
+      .tone7 {
+        background-color: #cb6a6a;
+      } /* Coral claro */
+      .tone8 {
+        background-color: #20b2aa;
+      } /* Aguamarina */
+      .tone9 {
+        background-color: #b1d875;
+      } /* Verde amarillento */
+      .tone10 {
+        background-color: #945ec7;
+      } /* Azul añil */
+      .tone11 {
+        background-color: #7fffd4;
+      } /* Aguamarina claro */
+      .tone12 {
+        background-color: #f8faff;
       }
     </style>
     <script src="./script.js"></script>
@@ -96,7 +201,37 @@
       </nav>
     </div>
     <article>
+
       <div class="container custom-container">
+        <h1 class="text-center">Índice</h1>
+        <div class="text-justify">
+          <ul>
+            <li>
+              <a href="#estatutos"><strong>ESTATUTOS SOCIALES DE DELICIO S.L.</strong></a>
+            </li>
+            <li>
+              <a href="#sl"><strong>CARACTERÍSTICAS DE UNA SOCIEDAD LIMITADA</strong></a>
+            </li>
+            <li>
+              <a href="#tramites"><strong>TRÁMITES A SEGUIR</strong></a>
+            </li>
+            <li>
+              <a href="#rrhh"><strong>RETO RECURSOS HUMANOS</strong></a>
+            </li>
+            <li>
+              <a href="#calendario"><strong>RETO Calendario</strong></a>
+            </li>
+            <li>
+              <a href="#compraventa"><strong>RETO Simulación de una compraventa</strong></a>
+            </li>
+            <li>
+              <a href="#dinero"><strong>RETO ¿de dónde sale el dinero de la empresa?</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="estatutos" class="container custom-container">
         <h1 class="text-center">ESTATUTOS SOCIALES DE DELICIO S.L.</h1>
         <div class="text-justify">
           <p>
@@ -223,7 +358,8 @@
           </p>
         </div>
       </div>
-      <div class="container custom-container">
+
+      <div id="sl" class="container custom-container">
         <h1 class="text-center">CARACTERÍSTICAS DE UNA SOCIEDAD LIMITADA</h1>
         <div class="text-justify">
           <h2>1. Socios</h2>
@@ -387,7 +523,8 @@
           </p>
         </div>
       </div>
-      <div class="container custom-container">
+
+      <div id="tramites" class="container custom-container">
         <h1 class="text-center">TRÁMITES A SEGUIR</h1>
         <div class="text-justify">
           <h2>1. Registra el nombre de la SL</h2>
@@ -559,28 +696,29 @@
           </p>
         </div>
       </div>
-      <div class="container custom-container">
+
+      <div id="rrhh" class="container custom-container">
         <h1 class="text-center">RETO RECURSOS HUMANOS</h1>
         <div class="text-justify">
           <h3>Contratos de personal</h3>
           <div class="cv">
             <iframe
               src="./PDF/CINDEFINIDO_2309_CASTELLANO_C.pdf"
-              width="800"
+              width="100%"
               height="600"
             ></iframe>
           </div>
           <div class="cv">
             <iframe
               src="./PDF/CTEMPORAL_2309_CASTELLANO_C TEM.pdf"
-              width="800"
+              width="100%"
               height="600"
             ></iframe>
           </div>
           <div class="cv">
             <iframe
               src="./PDF/CTEMPORAL_2309_CASTELLANO_C.pdf"
-              width="800"
+              width="100%"
               height="600"
             ></iframe>
           </div>
@@ -588,24 +726,986 @@
           <div class="cv">
             <iframe
               src="./PDF/Contrato SEGUMÁS.pdf"
-              width="800"
+              width="100%"
               height="600"
             ></iframe>
           </div>
           <div class="cv">
             <iframe
               src="./PDF/Contrato Vulcano Gres.pdf"
-              width="800"
+              width="100%"
               height="600"
             ></iframe>
           </div>
           <div class="cv">
             <iframe
               src="./PDF/CONTRATO DE COLABORACIÓN EXTERNA copia (1).pdf"
-              width="800"
+              width="100%"
               height="600"
             ></iframe>
           </div>
+        </div>
+      </div>
+
+      <div id="calendario" class="container custom-container">
+        <h1 class="text-center">RETO Calendario</h1>
+        <div class="text-justify">
+          <div class="important-dates tone12">
+            <h1>Conceptos Fiscales</h1>
+              
+            <h2>Sujeto Pasivo:</h2>
+            <p>
+              <strong>Definición:</strong> El sujeto pasivo es la persona o entidad
+              que está obligada a soportar la carga económica del impuesto. Es quien
+              debe cumplir con las obligaciones tributarias, como la declaración y el
+              pago del impuesto.
+            </p>
+            <p>
+              <strong>Ejemplo:</strong> En el impuesto sobre la renta de una empresa,
+              el sujeto pasivo sería la propia empresa, ya que es la entidad que debe
+              tributar sobre sus beneficios.
+            </p>
+      
+            <h2>Sujeto Activo:</h2>
+            <p>
+              <strong>Definición:</strong> El sujeto activo es la entidad que tiene el
+              derecho de percibir el impuesto. Es el beneficiario del ingreso generado
+              por la recaudación del impuesto.
+            </p>
+            <p>
+              <strong>Ejemplo:</strong> En el impuesto sobre el valor añadido (IVA),
+              el sujeto activo sería el Estado, ya que es la entidad que recauda dicho
+              impuesto.
+            </p>
+      
+            <h2>Hecho Imponible:</h2>
+            <p>
+              <strong>Definición:</strong> El hecho imponible es la situación o el
+              evento que da origen a la obligación tributaria. Es la circunstancia que
+              determina que se deba pagar un impuesto.
+            </p>
+            <p>
+              <strong>Ejemplo:</strong> En el impuesto sobre bienes inmuebles, el
+              hecho imponible sería la propiedad de un inmueble, ya que la posesión de
+              esta propiedad genera la obligación de pagar el impuesto
+              correspondiente.
+            </p>
+      
+            <h2>Tipo:</h2>
+            <p>
+              <strong>Definición:</strong> El tipo es la tasa o porcentaje que se
+              aplica sobre la base imponible para calcular el importe del impuesto a
+              pagar.
+            </p>
+            <p>
+              <strong>Ejemplo:</strong> En el impuesto de sociedades, el tipo podría
+              ser del 25%, lo que significa que el 25% de los beneficios netos de la
+              empresa se gravarán como impuesto.
+            </p>
+      
+            <h2>Exenciones:</h2>
+            <p>
+              <strong>Definición:</strong> Las exenciones son situaciones o
+              condiciones bajo las cuales ciertos sujetos pasivos quedan liberados de
+              la obligación de pagar el impuesto, a pesar de que normalmente estarían
+              sujetos a él.
+            </p>
+            <p>
+              <strong>Ejemplo:</strong> Un ejemplo de exención podría ser la exención
+              de impuestos para organizaciones sin fines de lucro en algunos países,
+              donde estas entidades están exentas de ciertos impuestos debido a su
+              naturaleza y objetivos.
+            </p>
+          </div>
+      
+          <br>
+          <hr>
+          <br>
+      
+          <div class="important-dates tone12">
+              <h1>Calendario Fiscal Delicio 2024</h1>
+      
+            <div class="important-dates tone1">
+              <h2><strong>Hasta el 20 de Febrero</strong></h2>
+      
+              <h3>IVA</h3>
+              <p>
+                Enero 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+      
+              <h3>Renta y Sociedades</h3>
+              <p>Número de Identificación Fiscal</p>
+              <p>
+                Cuarto trimestre 2023. Declaración trimestral de cuentas y operaciones
+                cuyos titulares no han facilitado el NIF a las entidades de crédito:
+                195
+              </p>
+              <p>
+                Declaración anual 2023. Identificación de las operaciones con cheques
+                de las entidades de crédito: 199
+              </p>
+      
+              <h3>Impuesto sobre las Primas de Seguro</h3>
+              <p>Enero 2024: 430</p>
+            </div>
+            <br />
+            <div class="important-dates tone1">
+              <h2>Hasta el 29 de Febrero</h2>
+      
+              <h3>IVA</h3>
+              <p>Enero 2024. Autoliquidación: 303</p>
+              <p>Enero 2024. Grupo de entidades, modelo individual: 322</p>
+              <p>Enero 2024. Grupo de entidades, modelo agregado: 353</p>
+              <p>Enero 2024. Ventanilla única - Régimen de importación: 369</p>
+              <p>Enero 2024. Operaciones asimiladas a las importaciones: 380</p>
+      
+              <h3>Impuesto sobre Sociedades</h3>
+              <p>
+                Entidades cuyo ejercicio coincida con el año natural: opción/renuncia
+                a la opción para el cálculo de los pagos fraccionados sobre la parte
+                de base imponible del período de los tres, nueve u once meses de cada
+                año natural: 036
+              </p>
+              <p>
+                Si el período impositivo no coincide con el año natural, la
+                opción/renuncia por esta modalidad de pagos fraccionados se ejercerá,
+                en los primeros dos meses de cada periodo impositivo o entre el inicio
+                de dicho periodo impositivo y el fin del plazo para efectuar el primer
+                pago fraccionado, si este plazo es inferior a dos meses: 036
+              </p>
+      
+              <h3>Declaración anual de consumo de energía eléctrica</h3>
+              <p>Año 2023: 159</p>
+      
+              <h3>
+                Declaración informativa anual de operaciones realizadas por
+                empresarios o profesionales adheridos al sistema de gestión de cobros
+                a través de tarjetas de crédito o débito
+              </h3>
+              <p>Año 2023: 170</p>
+            </div>
+            <br />
+            <div class="important-dates tone2">
+              <h2>Hasta el 20 de marzo</h2>
+      
+              <h3>Renta y Sociedades</h3>
+              <p>
+                Retenciones e ingresos a cuenta de rendimientos del trabajo,
+                actividades económicas, premios y determinadas ganancias patrimoniales
+                e imputaciones de renta, ganancias derivadas de acciones y
+                participaciones de las Instituciones de Inversión Colectiva, rentas de
+                arrendamiento de inmuebles urbanos, capital mobiliario, personas
+                autorizadas y saldos en cuentas.
+              </p>
+              <p>
+                Febrero 2024. Grandes empresas: 111, 115, 117, 123, 124, 126, 128,
+                216, 230
+              </p>
+      
+              <h3>Impuesto Especial sobre la Electricidad</h3>
+            </div>
+            <br />
+            <div class="important-dates tone2">
+              <h2>Hasta el 31 de marzo</h2>
+      
+              <h3>IVA</h3>
+              <p>Febrero 2024. Ventanilla única - Régimen de importación: 369</p>
+            </div>
+            <br />
+            <div class="important-dates tone3">
+              <h2>Hasta el 1 de abril</h2>
+      
+              <h3>IVA</h3>
+              <p>Febrero 2024. Autoliquidación: 303</p>
+              <p>Febrero 2024. Grupo de entidades, modelo individual: 322</p>
+              <p>Febrero 2024. Grupo de entidades, modelo agregado: 353</p>
+              <p>Febrero 2024. Operaciones asimiladas a las importaciones: 380</p>
+              <p>
+                Tercer trimestre 2024: solicitud de reembolso de las cuotas
+                tributarias soportadas por las fuerzas armadas de los Estados miembros
+                de la UE: 381
+              </p>
+      
+              <h3>Declaración informativa de valores, seguros y rentas</h3>
+              <p>Año 2023: 189</p>
+            </div>
+            <br />
+      
+            <div class="important-dates tone3">
+              <h2>Hasta el 22 de abril</h2>
+      
+              <h3>Renta y Sociedades</h3>
+              <p>
+                Retenciones e ingresos a cuenta de rendimientos del trabajo,
+                actividades económicas, premios y determinadas ganancias patrimoniales
+                e imputaciones de renta, ganancias derivadas de acciones y
+                participaciones de las Instituciones de Inversión Colectiva, rentas de
+                arrendamiento de inmuebles urbanos, capital mobiliario, personas
+                autorizadas y saldos en cuentas.
+              </p>
+              <p>
+                Marzo 2024. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216,
+                230
+              </p>
+              <p>
+                Primer trimestre 2024: 111, 115, 117, 123, 124, 126, 128, 136, 210,
+                216
+              </p>
+      
+              <h3>Pagos fraccionados Renta</h3>
+              <p>Primer trimestre 2024:</p>
+              <p>Estimación directa: 130</p>
+              <p>Estimación objetiva: 131</p>
+      
+              <h3>
+                Pagos fraccionados Sociedades y establecimientos permanentes de no
+                residentes
+              </h3>
+              <p>Ejercicio en curso:</p>
+              <p>Régimen general: 202</p>
+              <p>Régimen de consolidación fiscal (grupos fiscales): 222</p>
+      
+              <h3>IVA</h3>
+              <p>
+                Marzo 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+              <p>Primer trimestre 2024. Autoliquidación: 303</p>
+              <p>Primer trimestre 2024. Declaración-liquidación no periódica: 309</p>
+              <p>
+                Primer trimestre 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+              <p>
+                Primer trimestre 2024. Operaciones asimiladas a las importaciones: 380
+              </p>
+              <p>
+                Solicitud de devolución de cuotas reembolsadas a viajeros por
+                empresarios en recargo de equivalencia: 308
+              </p>
+              <p>
+                Reintegro de compensaciones en el régimen especial de la agricultura,
+                ganadería y pesca: 341
+              </p>
+            </div>
+            <br />
+            <div class="important-dates tone3">
+              <h2>Hasta el 30 de abril</h2>
+      
+              <h3>IVA</h3>
+              <p>Marzo 2024. Autoliquidación: 303</p>
+              <p>Marzo 2024. Grupo de entidades, modelo individual: 322</p>
+              <p>Marzo 2024. Grupo de entidades, modelo agregado: 353</p>
+              <p>Marzo 2024. Ventanilla única - Régimen de importación: 369</p>
+              <p>Marzo 2024. Operaciones asimiladas a las importaciones: 380</p>
+              <p>
+                Primer trimestre 2024: Ventanilla única – Regímenes exterior y de la
+                Unión: 369
+              </p>
+      
+              <h3>Número de Identificación Fiscal</h3>
+              <p>
+                Primer trimestre 2024. Cuentas y operaciones cuyos titulares no han
+                facilitado el NIF a las entidades de crédito: 195
+              </p>
+            </div>
+            <br />
+            <div class="important-dates tone4">
+              <h2>Hasta el 20 de mayo</h2>
+      
+              <h3>Renta y Sociedades</h3>
+              <p>
+                Retenciones e ingresos a cuenta de rendimientos del trabajo,
+                actividades económicas, premios y determinadas ganancias patrimoniales
+                e imputaciones de renta, ganancias derivadas de acciones y
+                participaciones de las Instituciones de Inversión Colectiva, rentas de
+                arrendamiento de inmuebles urbanos, capital mobiliario, personas
+                autorizadas y saldos en cuentas
+              </p>
+      
+              <p>
+                Abril 2024. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216,
+                230
+              </p>
+      
+              <h3>IVA</h3>
+              <p>
+                Abril 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+            </div>
+            <br />
+            <div class="important-dates tone4">
+              <h2>Hasta el 30 de mayo</h2>
+      
+              <h3>IVA</h3>
+              <p>Abril 2024. Autoliquidación: 303</p>
+              <p>Abril 2024. Grupo de entidades, modelo individual: 322</p>
+              <p>Abril 2024. Grupo de entidades, modelo agregado: 353</p>
+              <p>Abril 2024. Operaciones asimiladas a las importaciones: 380</p>
+            </div>
+            <br />
+            <div class="important-dates tone4">
+              <h2>Hasta el 31 de mayo</h2>
+      
+              <h3>IVA</h3>
+              <p>Abril 2024. Ventanilla única - Régimen de importación: 369</p>
+      
+              <h3>
+                Declaración informativa anual de cuentas financieras en el ámbito de
+                la asistencia mutua
+              </h3>
+              <p>Año 2023: 289</p>
+            </div>
+            <br />
+            <div class="important-dates tone5">
+              <h2>Hasta el 20 de junio</h2>
+      
+              <h3>Renta y Sociedades</h3>
+              <p>
+                Retenciones e ingresos a cuenta de rendimientos del trabajo,
+                actividades económicas, premios y determinadas ganancias patrimoniales
+                e imputaciones de renta, ganancias derivadas de acciones y
+                participaciones de las Instituciones de Inversión Colectiva, rentas de
+                arrendamiento de inmuebles urbanos, capital mobiliario, personas
+                autorizadas y saldos en cuentas.
+              </p>
+              <p>
+                Mayo 2024. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216,
+                230
+              </p>
+      
+              <h3>IVA</h3>
+              <p>
+                Mayo 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+      
+              <h3>Impuesto sobre las Primas de Seguros</h3>
+              <p>Mayo 2024: 430</p>
+            </div>
+            <br />
+            <div class="important-dates tone5">
+              <h2>Hasta el 30 de junio</h2>
+      
+              <h3>IVA</h3>
+              <p>Mayo 2024. Ventanilla única - Régimen de importación: 369</p>
+            </div>
+            <br>
+            <div class="important-dates tone6">
+              <h2>Hasta el 1 de julio</h2>
+      
+              <h3>Renta y Patrimonio</h3>
+              <p>
+                Declaración anual Renta y Patrimonio 2023 con resultado a devolver,
+                renuncia a la devolución, negativo y a ingresar sin domiciliación del
+                primer plazo: D-100, D-714
+              </p>
+              <p>
+                IRPF. Declaración del régimen especial de tributación para
+                trabajadores, profesionales, emprendedores e inversores desplazados
+                2023: 151
+              </p>
+      
+              <h3>IVA</h3>
+              <p>Mayo 2024: Autoliquidación: 303</p>
+              <p>Mayo 2024: Grupo de entidades, modelo individual: 322</p>
+              <p>Mayo 2024: Grupo de entidades, modelo agregado: 353</p>
+              <p>Mayo 2024. Operaciones asimiladas a las importaciones: 380</p>
+              <p>
+                Cuarto trimestre 2023: solicitud de reembolso de las cuotas
+                tributarias soportadas por las fuerzas armadas de los Estados miembros
+                de la UE: 381
+              </p>
+            </div>
+            <br />
+            <div class="important-dates tone6">
+              <h2>Hasta el 22 de julio</h2>
+      
+              <h3>Renta y Sociedades</h3>
+              <p>
+                Retenciones e ingresos a cuenta de rendimientos del trabajo,
+                actividades económicas, premios y determinadas ganancias patrimoniales
+                e imputaciones de renta, ganancias derivadas de acciones y
+                participaciones de las Instituciones de Inversión Colectiva, rentas de
+                arrendamiento de inmuebles urbanos, capital mobiliario, personas
+                autorizadas y saldos en cuentas.
+              </p>
+              <p>
+                Junio 2024. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216,
+                230
+              </p>
+              <p>
+                Segundo trimestre 2024: 111, 115, 117, 123, 124, 126, 128, 136, 210,
+                216
+              </p>
+      
+              <h3>Pagos fraccionados Renta</h3>
+              <p>Segundo trimestre 2024:</p>
+              <p>Estimación directa: 130</p>
+              <p>Estimación objetiva: 131</p>
+      
+              <h3>IVA</h3>
+              <p>
+                Junio 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+              <p>Segundo trimestre 2024. Autoliquidación: 303</p>
+              <p>Segundo trimestre 2024. Declaración-liquidación no periódica: 309</p>
+              <p>
+                Segundo trimestre 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+              <p>
+                Segundo trimestre 2024. Operaciones asimiladas a las importaciones:
+                380
+              </p>
+              <p>
+                Solicitud de devolución de cuotas reembolsadas a viajeros por
+                empresarios en recargo de equivalencia: 308
+              </p>
+              <p>
+                Reintegro de compensaciones en el Régimen especial de la agricultura,
+                ganadería y pesca: 341
+              </p>
+      
+              <h3>Impuesto sobre las Primas de Seguros</h3>
+              <p>Junio 2024: 430</p>
+            </div>
+            <br />
+            <div class="important-dates tone6">
+              <h2>Hasta el 25 de julio</h2>
+      
+              <h3>
+                Impuesto sobre Sociedades e Impuesto sobre la Renta de no Residentes
+                (establecimientos permanentes y entidades de rentas constituidas en el
+                extranjero con presencia en territorio español)
+              </h3>
+              <p>
+                Declaración anual 2023. Entidades cuyo período impositivo coincida con
+                el año natural: 200, 206, 220.
+              </p>
+              <p>
+                Resto de entidades: en los 25 días naturales siguientes a los seis
+                meses posteriores al fin del período impositivo.
+              </p>
+      
+              <h3>
+                Declaración de prestación patrimonial por conversión de activos por
+                impuesto diferido en crédito exigible frente a la Administración
+                Tributaria
+              </h3>
+              <p>
+                Año 2023. Entidades cuyo período impositivo coincida con el año
+                natural: 221
+              </p>
+              <p>
+                Resto de entidades: en los 25 días naturales siguientes a los seis
+                meses posteriores al fin del período impositivo.
+              </p>
+            </div>
+            <br />
+            <div class="important-dates tone6">
+              <h2>Hasta el 30 de julio</h2>
+      
+              <h3>IVA</h3>
+              <p>Junio 2024. Autoliquidación: 303</p>
+              <p>Junio 2024. Grupo de entidades, modelo individual: 322</p>
+              <p>Junio 2024. Grupo de entidades, modelo agregado: 353</p>
+              <p>Junio 2024. Operaciones asimiladas a las importaciones: 380</p>
+            </div>
+            <br />
+            <div class="important-dates tone6">
+              <h2>Hasta el 31 de julio</h2>
+      
+              <h3>Número de Identificación Fiscal</h3>
+              <p>
+                Segundo trimestre 2024. Cuentas y operaciones cuyos titulares no han
+                facilitado el NIF a las entidades de crédito: 195
+              </p>
+      
+              <h3>IVA</h3>
+              <p>Junio 2024. Ventanilla única - Régimen de importación: 369</p>
+              <p>
+                Segundo trimestre 2024: Ventanilla única – Regímenes exterior y de la
+                Unión: 369
+              </p>
+      
+              <h3>Impuesto sobre Depósitos en las Entidades de Crédito</h3>
+              <p>Autoliquidación 2023: 411</p>
+              <p>Pago a cuenta. Autoliquidación 2024: 410</p>
+            </div>
+            <br />
+            <div class="important-dates tone7">
+              <h2>Hasta el 20 de agosto</h2>
+      
+              <h3>Renta y Sociedades</h3>
+              <p>
+                Retenciones e ingresos a cuenta de rendimientos del trabajo,
+                actividades económicas, premios y determinadas ganancias patrimoniales
+                e imputaciones de renta, ganancias derivadas de acciones y
+                participaciones de las Instituciones de Inversión Colectiva, rentas de
+                arrendamiento de inmuebles urbanos, capital mobiliario, personas
+                autorizadas y saldos en cuentas.
+              </p>
+              <p>
+                Julio 2024. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216,
+                230
+              </p>
+      
+              <h3>Impuesto Especial sobre la Electricidad</h3>
+              <p>Julio 2024. Grandes empresas: 560</p>
+      
+              <h3>Impuesto sobre las transacciones financieras</h3>
+              <p>Julio 2024: 604</p>
+            </div>
+            <br />
+            <div class="important-dates tone7">
+              <h2>Hasta el 30 de agosto</h2>
+      
+              <h3>IVA</h3>
+              <p>Julio 2024. Autoliquidación: 303</p>
+              <p>Julio 2024. Grupo de entidades, modelo individual: 322</p>
+              <p>Julio 2024. Grupo de entidades, modelo agregado: 353</p>
+              <p>Julio 2024. Operaciones asimiladas a las importaciones: 380</p>
+            </div>
+            <br>
+            <div class="important-dates tone7">
+              <h2>Hasta el 31 de agosto</h2>
+      
+              <h3>IVA</h3>
+              <p>Julio 2024. Ventanilla única - Régimen de importación: 369</p>
+            </div>
+            <br />
+            <div class="important-dates tone8">
+              <h2>Hasta el 20 de septiembre</h2>
+      
+              <h3>Renta y Sociedades</h3>
+              <p>
+                Retenciones e ingresos a cuenta de rendimientos del trabajo,
+                actividades económicas, premios y determinadas ganancias patrimoniales
+                e imputaciones de renta, ganancias derivadas de acciones y
+                participaciones de las Instituciones de Inversión Colectiva, rentas de
+                arrendamiento de inmuebles urbanos, capital mobiliario, personas
+                autorizadas y saldos en cuentas.
+              </p>
+              <p>
+                Agosto 2024. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216,
+                230
+              </p>
+      
+              <h3>IVA</h3>
+              <p>
+                Julio y agosto 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+      
+              <h3>Impuesto sobre las Primas de Seguros</h3>
+              <p>Julio y agosto 2024: 430</p>
+      
+              <h3>Impuesto Especial sobre la Electricidad</h3>
+              <p>Agosto 2024. Grandes empresas: 560</p>
+      
+              <h3>Impuesto sobre las Transacciones Financieras</h3>
+              <p>Agosto 2024: 604</p>
+      
+              <h3>Gravamen temporal energético</h3>
+              <p>Declaración del ingreso de la prestación 2024: 795</p>
+            </div>
+            <br />
+            <div class="important-dates tone8">
+              <h2>Hasta el 30 de septiembre</h2>
+      
+              <h3>IVA</h3>
+              <p>Año 2023. Solicitud de devolución del IVA soportado: 360,361</p>
+              <p>Agosto 2024. Autoliquidación: 303</p>
+              <p>Agosto 2024. Grupo de entidades, modelo individual: 322</p>
+              <p>Agosto 2024. Grupo de entidades, modelo agregado: 353</p>
+              <p>Agosto 2024. Ventanilla única - Régimen de importación: 369</p>
+              <p>Agosto 2024. Operaciones asimiladas a las importaciones: 380</p>
+              <p>
+                Primer trimestre 2024: solicitud de reembolso de las cuotas
+                tributarias soportadas por las fuerzas armadas de los Estados miembros
+                de la UE: 381
+              </p>
+      
+              <h3>Impuestos Medioambientales</h3>
+              <p>
+                Agosto 2024. Impuesto especial sobre los envases de plástico no
+                reutilizables. Autoliquidación: 592
+              </p>
+              <p>
+                Año 2024. Impuesto sobre el valor de la producción de la energía
+                eléctrica. Segundo pago fraccionado: 583
+              </p>
+            </div>
+            <br />
+            <div class="important-dates tone9">
+              <h2>Hasta el 21 de octubre</h2>
+      
+              <h3>Renta y Sociedades</h3>
+              <p>
+                Retenciones e ingresos a cuenta de rendimientos del trabajo,
+                actividades económicas, premios y determinadas ganancias patrimoniales
+                e imputaciones de renta, ganancias derivadas de acciones y
+                participaciones de las Instituciones de Inversión Colectiva, rentas de
+                arrendamiento de inmuebles urbanos, capital mobiliario, personas
+                autorizadas y saldos en cuentas.
+              </p>
+              <p>
+                Septiembre 2024. Grandes empresas: 111, 115, 117, 123, 124, 126, 128,
+                216, 230
+              </p>
+              <p>
+                Tercer trimestre 2024: 111, 115, 117, 123, 124, 126, 128, 136, 210,
+                216
+              </p>
+      
+              <h3>Pagos fraccionados Renta</h3>
+              <p>Tercer trimestre 2024:</p>
+              <p>Estimación directa: 130</p>
+              <p>Estimación objetiva: 131</p>
+      
+              <h3>
+                Pagos fraccionados Sociedades y Establecimientos Permanentes de no
+                Residentes
+              </h3>
+              <p>Ejercicio en curso:</p>
+              <p>Régimen general: 202</p>
+              <p>Régimen de consolidación fiscal (grupos fiscales): 222</p>
+      
+              <h3>IVA</h3>
+              <p>
+                Septiembre 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+              <p>Tercer trimestre 2024. Autoliquidación: 303</p>
+              <p>Tercer trimestre 2024. Declaración-liquidación no periódica: 309</p>
+              <p>
+                Tercer trimestre 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+              <p>
+                Tercer trimestre 2024. Operaciones asimiladas a las importaciones: 380
+              </p>
+              <p>
+                Solicitud de devolución de cuotas reembolsadas a viajeros por
+                empresarios en recargo de equivalencia: 308
+              </p>
+              <p>
+                Reintegro de compensaciones en el régimen especial de la agricultura,
+                ganadería y pesca: 341
+              </p>
+      
+              <h3>Impuesto sobre las Primas de Seguros</h3>
+              <p>Septiembre 2024: 430</p>
+      
+              <h3>Impuesto Especial sobre la Electricidad</h3>
+              <p>Septiembre 2024. Grandes empresas: 560</p>
+              <p>Tercer trimestre 2024. Excepto grandes empresas: 560</p>
+      
+              <h3>Impuestos Medioambientales</h3>
+              <p>
+                Septiembre 2024. Impuesto especial sobre los envases de plástico no
+                reutilizables. Autoliquidación: 592
+              </p>
+      
+              <h3>Impuesto sobre las Transacciones Financieras</h3>
+              <p>Septiembre 2024: 604</p>
+            </div>
+            <br />
+            <div class="important-dates tone9">
+              <h2>Hasta el 30 de octubre</h2>
+      
+              <h3>IVA</h3>
+              <p>Septiembre 2024. Autoliquidación: 303</p>
+              <p>Septiembre 2024. Grupo de entidades, modelo individual: 322</p>
+              <p>Septiembre 2024. Grupo de entidades, modelo agregado: 353</p>
+              <p>Septiembre 2024. Operaciones asimiladas a las importaciones: 380</p>
+      
+              <h3>Impuestos Medioambientales</h3>
+              <p>
+                Tercer trimestre 2024. Impuesto sobre el depósito de residuos en
+                vertederos, la incineración y la coincineración de residuos.
+                Autoliquidación: 593
+              </p>
+            </div>
+            <br />
+            <div class="important-dates tone9">
+              <h2>Hasta el 31 de octubre</h2>
+      
+              <h3>Número de Identificación Fiscal</h3>
+              <p>
+                Tercer trimestre 2024. Cuentas y operaciones cuyos titulares no han
+                facilitado el NIF a las entidades de crédito: 195
+              </p>
+      
+              <h3>IVA</h3>
+              <p>Septiembre 2024. Ventanilla única - Régimen de importación: 369</p>
+              <p>
+                Tercer trimestre 2024. Ventanilla única – Regímenes exterior y de la
+                Unión: 369
+              </p>
+      
+              <h3>Impuestos sobre Determinados Servicios Digitales</h3>
+              <p>Tercer trimestre 2024: 490</p>
+      
+              <h3>Impuestos Medioambientales</h3>
+              <p>
+                Septiembre 2024. Impuesto especial sobre los envases de plástico no
+                reutilizables. Presentación contabilidad y libro registro de
+                existencias
+              </p>
+              <p>
+                Tercer trimestre 2024. Impuesto especial sobre los envases de plástico
+                no reutilizables. Presentación contabilidad y libro registro de
+                existencias
+              </p>
+              <p>
+                Julio y agosto 2024. Impuesto especial sobre los envases de plástico
+                no reutilizables. Presentación contabilidad y libro registro de
+                existencias
+              </p>
+      
+              <h3>Declaración informativa sobre pagos transfronterizos</h3>
+              <p>Tercer trimestre 2024: 379</p>
+      
+              <h3>Cuenta Corriente Tributaria</h3>
+              <p>
+                Solicitud de inclusión para el año 2025: CCT (Cuenta Corriente
+                Tributaria)
+              </p>
+              <p>
+                La renuncia se deberá formular en el modelo de “Solicitud de
+                inclusión/comunicación de renuncia al sistema de cuenta corriente en
+                materia tributaria”
+              </p>
+            </div>
+            <br />
+            <div class="important-dates tone10">
+              <h2>Hasta el 5 de noviembre</h2>
+      
+              <h3>Renta</h3>
+              <p>
+                Ingreso del segundo plazo de la declaración anual de 2023, si se
+                fraccionó el pago: 102
+              </p>
+            </div>
+            <br />
+            <div class="important-dates tone10">
+              <h2>Hasta el 20 de noviembre</h2>
+      
+              <h3>Renta y Sociedades</h3>
+              <p>
+                Retenciones e ingresos a cuenta de rendimientos del trabajo,
+                actividades económicas, premios y determinadas ganancias patrimoniales
+                e imputaciones de renta, ganancias derivadas de acciones y
+                participaciones de las Instituciones de Inversión Colectiva, rentas de
+                arrendamiento de inmuebles urbanos, capital mobiliario, personas
+                autorizadas y saldos en cuentas.
+              </p>
+              <p>
+                Octubre 2024. Grandes empresas: 111, 115, 117, 123, 124, 126, 128,
+                216, 230
+              </p>
+      
+              <h3>IVA</h3>
+              <p>
+                Octubre 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+      
+              <h3>Impuesto sobre las Primas de Seguros</h3>
+              <p>Octubre 2024: 430</p>
+      
+              <h3>Impuesto Especial sobre la Electricidad</h3>
+              <p>Octubre 2024. Grandes empresas: 560</p>
+      
+              <h3>Impuestos Medioambientales</h3>
+              <p>
+                Octubre 2024. Impuesto especial sobre los envases de plástico no
+                reutilizables. Autoliquidación: 592
+              </p>
+              <p>
+                Año 2024. Impuesto sobre el valor de la producción de la energía
+                eléctrica. Tercer pago fraccionado: 583
+              </p>
+      
+              <h3>Impuesto sobre las Transacciones Financieras</h3>
+              <p>Octubre 2024: 604</p>
+            </div>
+            <br />
+            <div class="important-dates tone10">
+              <h2>Hasta el 30 de noviembre</h2>
+      
+              <h3>IVA</h3>
+              <p>Octubre 2024. Ventanilla única - Régimen de importación: 369</p>
+            </div>
+            <br />
+            <div class="important-dates tone11">
+              <h2>Hasta el 20 de diciembre</h2>
+      
+              <h3>Renta y Sociedades</h3>
+              <p>
+                Retenciones e ingresos a cuenta de rendimientos del trabajo,
+                actividades económicas, premios y determinadas ganancias patrimoniales
+                e imputaciones de renta, ganancias derivadas de acciones y
+                participaciones de las Instituciones de Inversión Colectiva, rentas de
+                arrendamiento de inmuebles urbanos, capital mobiliario, personas
+                autorizadas y saldos en cuentas.
+              </p>
+              <p>
+                Noviembre 2024. Grandes empresas: 111, 115, 117, 123, 124, 126, 128,
+                216, 230
+              </p>
+      
+              <h3>
+                Pagos fraccionados Sociedades y establecimientos permanentes de no
+                residentes
+              </h3>
+              <p>Ejercicio en curso:</p>
+              <p>Régimen general: 202</p>
+              <p>Régimen de consolidación fiscal (grupos fiscales): 222</p>
+      
+              <h3>IVA</h3>
+              <p>
+                Noviembre 2024. Declaración recapitulativa de operaciones
+                intracomunitarias: 349
+              </p>
+      
+              <h3>Impuestos Medioambientales</h3>
+              <p>
+                Noviembre 2024. Impuesto especial sobre los envases de plástico no
+                reutilizables. Autoliquidación: 592
+              </p>
+              <p>
+                Año 2023. Impuesto sobre el valor de la producción de la energía
+                eléctrica. Declaración informativa anual de operaciones con
+                contribuyentes: 591
+              </p>
+              <p>
+                Año 2024. Impuesto sobre la producción de combustible nuclear gastado
+                y residuos radiactivos resultantes de la generación de energía
+                nucleoeléctrica. Segundo pago fraccionado: 584
+              </p>
+      
+              <h3>Impuesto sobre las Transacciones Financieras</h3>
+              <p>Noviembre 2024: 604</p>
+            </div>
+            <br />
+            <div class="important-dates tone11">
+              <h2>Hasta el 31 de diciembre</h2>
+      
+              <h3>Renta</h3>
+              <p>
+                Renuncia o revocación estimación directa simplificada y estimación
+                objetiva para 2025 y sucesivos: 036/037
+              </p>
+      
+              <h3>IVA</h3>
+              <p>Noviembre 2024. Ventanilla única - Régimen de importación: 369</p>
+              <p>
+                Segundo trimestre 2024: solicitud de reembolso de las cuotas
+                tributarias soportadas por las fuerzas armadas de los Estados miembros
+                de la UE: 381
+              </p>
+              <p>
+                Renuncia o revocación regímenes simplificado y agricultura, ganadería
+                y pesca para 2025 y sucesivos: 036/037
+              </p>
+              <p>
+                Opción o revocación por la determinación de la base imponible mediante
+                el margen de beneficio global en el régimen especial de los bienes
+                usados, objetos de arte, antigüedades y objetos de colección para 2025
+                y sucesivos: 036
+              </p>
+              <p>
+                Opción tributación en destino ventas a distancia a otros países de la
+                Unión Europea para 2025 y 2026: 036
+              </p>
+              <p>
+                Renuncia régimen de deducción común para sectores diferenciados para
+                2025: sin modelo
+              </p>
+              <p>
+                Comunicación de alta en el régimen especial del grupo de entidades:
+                039
+              </p>
+              <p>
+                Opción o renuncia por la modalidad avanzada del régimen especial del
+                grupo de entidades: 039
+              </p>
+              <p>
+                Comunicación anual relativa al régimen especial del grupo de
+                entidades: 039
+              </p>
+              <p>
+                Opción por el régimen especial del criterio de caja para 2025: 036/037
+              </p>
+              <p>
+                Renuncia al régimen especial del criterio de caja para 2025, 2026 y
+                2027: 036/037
+              </p>
+      
+              <h3>Impuestos Medioambientales</h3>
+              <p>
+                Noviembre 2024. Impuesto especial sobre los envases de plástico no
+                reutilizables. Presentación contabilidad y libro registro de
+                existencias
+              </p>
+            </div>
+          </div>
+        </div>  
+      </div>
+
+      <div id="compraventa" class="container custom-container">
+        <h1 class="text-center">RETO Simulación de una compraventa</h1>
+        <div class="text-justify">
+          <h2>Compra</h2>
+          <div class="cv">
+            <iframe
+              src="./PDF/Nota de pedido MercaGranada.pdf"
+              width="100%"
+              height="600"
+            ></iframe>
+          </div>
+          <div class="cv">
+            <iframe
+              src="./PDF/Albaran MercaGranada.pdf"
+              width="100%"
+              height="600"
+            ></iframe>
+          </div>
+          <div class="cv">
+            <iframe
+              src="./PDF/Factura MercaGranada.pdf"
+              width="100%"
+              height="600"
+            ></iframe>
+          </div>
+          <h2>Venta</h2>
+          <div class="cv">
+            <iframe
+              src="./PDF/venta Nota de pedido.pdf"
+              width="100%"
+              height="600"
+            ></iframe>
+          </div>
+          <div class="cv">
+            <iframe
+              src="./PDF/venta Factura.pdf"
+              width="100%"
+              height="600"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div id="dinero" class="container custom-container">
+        <div  class="container custom-container">
+        <h1 class="text-center">RETO ¿de dónde sale el dinero de la empresa?</h1>
+        <div class="text-justify">
         </div>
       </div>
       <!-- jQuery, Popper.js, Bootstrap JS -->
